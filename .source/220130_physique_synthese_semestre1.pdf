@@ -1,0 +1,480 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{a4}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+
+\DeclareUnicodeCharacter{2212}{-}
+\author{Igor et Jean}
+\date{\today}
+\title{Synthèse Examens physique}
+\parskip=5pt
+\begin{document}
+   \maketitle
+   \tableofcontents 
+   \newpage
+   \section{Système internationnal}
+   \subsection{Grandeurs fondamentales} \label{ss:grandfond}
+   On appelle \underline{grandeur} (physique), toute propriété physique qui peut
+   être mesurée/calculée. On définis une grandeur par un nombre suivit d'une
+   unité. 
+
+   A partir de 7 grandeurs, on peut décrire toute les autres. Celles-ci sont
+   appelée \emph{grandeurs fondamentales} et sont : 
+
+   \begin{itemize}
+      \item[-] La Masse ($M$), décrite dans le SI par des \emph{kilogrammes}.
+      \item[-] La Longeur ($L$), décrite dans le SI par des \emph{mètres}.
+      \item[-] Le Temps ($T$), décrite dans le SI par des \emph{secondes}.
+      \item[-] La Température ($\Theta$), décrite dans le SI par des \emph{Kelvins}.
+      \item[-] L'Intensité Électrique ($I$), décrite dans le SI par des \emph{ampères}.
+      \item[-] L'Intensité Lumineuse ($J$), décrite dans le SI par des \emph{candelas}.
+      \item[-] La quantité de matière ($N$), décrite dans le SI par des \emph{moles}.
+   \end{itemize}
+
+   Les autres grandeurs ne sont qu'une combinaison de ces dernières. La vitesse,
+   par exemple, est une combinaison de la longueur et du temps. 
+
+   \subsection{Dimensions}
+
+   La \underline{dimension} caractérise une grandeur. Comme vu ci-dessus 
+   (dans le point \ref{ss:grandfond}), chaque grandeur est faite à partir de
+   grandeurs fondamentales. La dimension définit comment ces grandeurs
+   fondamentales sont agencée pour produire la grandeur dérivée.
+
+   La dimension de $x$ se note $[x]$ et est un produit de grandeurs
+   fondamentales élevées chacunes à un nombre particulier.
+
+   Ainsi, la vitesse, qui est décrite par une distance sur un temps, à une
+   dimension de \[[vitesse] = \frac{L}{T} = L \cdot T^{-1}\] la surface, qui
+   est une longueur multipliée par une longueur, à une dimension de 
+   \[[surface] = L \cdot L = L^2\] et, en dernier exemple, la force, une
+   masse multiplier par une accelération
+   \begin{align*}
+   &[Force] = M \cdot [accelération] \\
+   &[accelération] = \frac{\frac{L}{T}}{T} = \frac{L}{T} \cdot \frac{1}{T}
+   = \frac{L}{T^2} = L \cdot T^{-2} \\
+   &[Force] = L\cdot M \cdot T^{-2}
+   \end{align*}
+
+   Voici une liste de quelques grandeurs dérivée de base et leur dimension :
+
+   \begin{itemize}
+      \item[-] Fréquence $S^{-1}$
+      \item[-] Pression $ML^{-1}T^{-2}$
+      \item[-] Travail, énergie, quantité de chaleur $ML^2T^{-2}$
+      \item[-] Charge électrique $IT$
+      \item[-] Tension électrique $ML^2T^{-3}I^{-1}$
+   \end{itemize}
+   \subsection{Unités}
+   Une \underline{unité} est un étalon nécessaire à la mesure d'une grandeur
+   physique. Dans le SI, à chaque grandeur fondamentale correspond une
+   unité (cf. liste du point \ref{ss:grandfond}). Pour trouver les unités des
+   grandeurs dérivée, on prend la dimension de la grandeur et on remplace les
+   facteurs par les unités fondamentales auquels ils sont associés.
+
+   Par exemple, l'unité de la vitesse est le $m/s$, qui est dérivée, selon la
+   dimension de sa grandeur corresondante, des unités unités fondamentales.
+   \subsection{Formules}
+   Pour qu'une formule ai un sens physique, il faut que les deux côtés de
+   l'équation soit de la même dimension/unité.
+
+   Une formule prend des grandeurs pertinentes, les associe pour qu'elle
+   corresponde à la dimension de la réponse puis multiplie le tout par une
+   constante (chiffre sans dimension) pour rendre l'équation correcte.
+
+   Par exemple la formule \[volume\ sphere = \frac{4}{3}\pi r^3\] prend la
+   grandeur du rayon comme entrée. La met au cube pour que les dimensions des
+   deux côtés de l'équations soit identique (la réponse est un volume $L^3$).
+   Puis, multiplie le tout par la constante $\frac{4}{3}\pi$ qui ajuste/fait
+   concorder les nombres.
+   
+   Comme dit dans la partie \ref{ss:grandfond}, une grandeur physique est le
+   facteur d'un nombre et d'une unité. La formule est ainsi divisée en deux
+   partie, l'assemblage des grandeurs qui s'occupent de l'unitée et la constante
+   qui s'occupe du nombre.
+   \section{Interaction lumière-matière}
+   \subsection{Introduction}
+   La lumière partage de nombreuses caractéristiques avec les ondes, c'est
+   pourquoi, en optique, on peut se la représenter comme tellle.
+
+   Une \underline{onde} est une oscillation (phénomène qui se repète à interval
+   régulier) qui se propage.
+   
+   La lumière est caractérisée par sa \underline{longueur d'onde} et sa
+   \underline{fréquence}.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth, height=150pt]{figwave.png} 
+        \caption{Longueur d'onde et période}
+        \label{fig:longonde}
+    \end{figure}
+
+   La longueur d'onde notée $\lambda$ est la distance entre deux maximas de
+   l'onde.
+
+   La \underline{période} notée $T$ est le temps en secondes que prend une
+   oscillation.
+
+   La fréquence notée $\nu$ se calcule en \textit{Hertz} et correspond au nombre
+   d'oscillations qu'il y a en une seconde. Ainsi elle égale à $\frac{1s}{T}$.
+   L'inverse de la période corresondant au nombre de périodes par secondes.
+
+   La vitesse $c$ d'une onde se trouve grâce à la formule suivante
+   
+    \begin{equation}\label{eq:longfreq}
+       \lambda \cdot \nu = c
+    \end{equation}
+
+   Dans le cas de la lumière, la vitesse $c$ est constante, de ce fait, la
+   fréquence et la longueur d'onde sont inversement proportionnelles.
+
+   Le rayon lumineux n'est pas une réalité physique mais une outil qui permet de
+   comprendre l'interaction de la lumière avec la matière. Un rayon lumineux est
+   un rayon perpendiculaire aux fronts d'ondes.
+
+   Un \underline{front d'onde} est un ensemble de points qui vibrent de la même
+   façon. Une surface dont les points ont mis le même temps de parcours depuis
+   la source. Des fronts d'ondes identiques sont donc séparés par une longueur
+   d'onde.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\textwidth]{front.png} 
+        \caption{Les fronts d'onde et rayon}
+        \label{fig:frontonde}
+    \end{figure}
+      
+   Quand la lumière interagit avec de la matière, trois phénomènes vont se
+   produire :
+
+   \begin{itemize}
+      \item[-] La diffusion (le rayon se réflechit dans toutes les directions,
+      se diffuse dans l'objet).
+      \item[-] La réflexion.
+      \item[-] La réfraction. 
+   \end{itemize}
+   \subsection{Réflexion}
+   La réflexion est le brusque rebondissement d'une onde à l'interface de
+   deux milieux.
+   
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{reflexion.png} 
+        \caption{Réflexion d'un rayon sur une surface (en bleu)}
+        \label{fig:reflexion}
+    \end{figure}
+
+    La \underline{surface dioptrique} est l'interface entre le milieu 1 et le 
+    milieu 2.
+
+    Le \underline{dioptre} est la surface dioptrique + milieu 1 + milieu 2.
+
+    La \underline{normale} est la perpendiculaire à la surface dioptrique.
+
+    $\theta i$ ($i$ sur la figure \ref{fig:reflexion}) est l'angle d'incidence,
+    càd l'angle entre le rayon incident et la normale.
+    
+   $\theta r$ est l'angle réfracté. L'angle entre le rayon réfracté et la
+   normale.
+
+    La loi de la réflexion indique que :
+    \begin{equation}\label{eq:reflexion}
+      \theta i = \theta r
+    \end{equation}
+   \subsection{Réfraction}
+
+   La refraction est le phénomène de courbure/déviement d'une onde à
+   l'interface de deux milieux à indice de réfraction différent.
+
+   La lumière se déplace plus lentement dans la matière. \underline{L'indice de
+   réfraction} d'un milieu exprime sa capacité à la ralentir et est notée $n$.
+   \[n = \frac{c}{v}\]
+   Ici, $c$ est la vitesse de la lumière dans le vide (sa vitesse maximum) et 
+   $v$, sa vitesse dans le milieu. L'indice de réfraction indique combien de
+   fois la vitesse du milieu rentre dans la vitesse maximal/du vide. Au plus
+   elle est grande, au plus le milieu est lent et elle ne peut pas être $<1$
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{refraction.png} 
+        \caption{réfraction entre deux milieux}
+        \label{fig:refraction}
+    \end{figure}
+   
+   Les règles
+   \begin{align} 
+      & \frac{\sin \theta i}{\sin \theta r} = \frac{n_2}{n_1} \label{eq:refrac}\\
+      & n_1 \cdot \sin \theta i = n_2 \cdot \sin \theta r \label{eq:refrac2}
+   \end{align}
+   sont deux manières d'exprimer une même relation. Celle-ci indique qu'au plus
+   on passe d'un milieu rapide vers un milieu lent (au plus la différence de
+   vitesse est grande), au plus le rayon va se rapprocher de la normale.  Et
+   qu'inversément, au plus on passe d'un milieu lent à rapide, au plus le rayon
+   va s'en éloigner.
+
+   Le principe de \underline{retour inverse de la lumière}, indique que la 
+   lumière se propage d'un point à un autre sur des trajectoires telles que la
+   durée du parcours est minimale.
+
+   Ainsi, dans un milieu à indice de réfraction homogène, elle va se déplacer en
+   ligne droite. Mais quand ce n'est pas le cas, elle forme un plus grand angle
+   d'incidence dans le milieu rapide et se rapproche de la normale dans le
+   milieu lent, de sorte à parcourir une plus grande distance à distance élevée 
+   tout en gardant le meileur compromis sur la distance totale. Le principe est
+   décrit par les équations \ref{eq:refrac} et \ref{eq:refrac2} déjà vue
+   ci-dessus.
+
+   Cette loi et c'est équation, ont par ailleur comme conséquence, que la
+   lumière suit exactement le même chemin l'allé et le retour ; pour
+   passer d'un point $A$ à $B$ que pour passer du point $B$ à $A$. 
+
+   On peut illustrer cette loi, par un maitre nageur qui tente de sauver
+   quelqu'un. Si un maitre nageur, étant sur la plage, voit quelqu'un se
+   noyer dans l'eau à sa gauche. Il ne prendra pas le chemin en ligne droite,
+   avec lequel il doit parcourir une grande distance à la nage. Il fera en sorte
+   de parcourir une plus grande distance sur la plage à une vitesse élevée, puis
+   diminuer l'angle par rapport à la personne quand il commence à nager. Ici, la
+   plage est le milieu rapide, la mer le milieu lent et le maitre nageur est le
+   rayon. 
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.4\textwidth]{fermat.png} 
+        \caption{Exemple du principe de retour inverse, par la trajectoire
+        d'un rayon passant entre l'air et l'eau.}
+        \label{fig:fermat}
+    \end{figure}
+   
+   Les équations \ref{eq:refrac} et  \ref{eq:refrac2} impliquent aussi que pour
+   une différence d'indice de milieu donnée, il y a un angle d'incidence
+   maximum, au delà duquel les rayon ne savent plus passer du milieu lent à
+   rapide.
+
+   Cet angle est appelé $\theta lim$. Quand un rayon l'emprunte pour passer du
+   milieu lent à rapide, il est réfracté/s'éloigne de $90$° de la normale ;
+   rase la surface dioptrique. Logiquement, si, avec ce $\theta i$ le $\theta r$
+   rase la surface, un rayon avec un $\theta i$ plus élevé est réfléchi. 
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth, height=150pt]{limite2.png} 
+        \includegraphics[width=0.45\textwidth, height=150pt]{limite.jpeg} 
+        \caption{Angle limite}
+        \label{fig:limite}
+    \end{figure}
+
+   $\theta lim$ est toujours dans le milieu le plus lent.
+
+   Quand on a un $\theta i$ > $\theta lim$, les règles de la reflexion
+   (équation \ref{eq:reflexion}) s'appliquent.
+
+   On peut déterminer le $\theta lim$ entre deux milieux avec l'équation
+   \ref{eq:refrac2}. En mettant $\theta i$ à $90$° du côté de du milieu rapide,
+   on obtient de l'autre côté le sinus de $\theta lim$
+
+   On peut tranformer cette équation en : 
+   
+   \begin{equation}\label{eq:thetalim}
+      \theta lim = \arcsin n_2/n_1
+   \end{equation}
+   \section{Lentilles}
+   \subsection{Théorie}
+   Une lentille est un objet fait d'un matériel transparent pouvant faire
+   converger ou diverger la lumière grâce à ses courbes.
+
+   Une lentille convergente peut être représentée comme l'addition de deux
+   cercles, alors qu'une divergente correspond à l'espace entre deux cerlces.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{centres_de_courbures.png}
+        \caption{Lentille convergente et divergentes avec leurs centres de
+        courbures}
+        \label{fig:divcon}
+    \end{figure}
+
+   On peut alors décrire une lentille par la position des centres des deux cerles
+   qui la composent. Ceux-ci sont appelé \underline{centres de courbures} et se
+   notent $R_1$ pour le rayon de la face d'entrée et $R_2$ pour la face de
+   sortie, (on peut aussi les noter $C_1$ et $C_2$ comme dans l'illustration). 
+
+   \underline{L'axe optique} est une droite qui passe par les deux centres de
+   courbures.
+
+   Ainsi, dans le cas des lentilles convergentes, $R_1 > 0$ et $R_2 < 0$ tandis
+   que pour les divergentes $R_2 > 0$ et $R_1 < 0$.
+
+   Une lentille convergente fais converger tous les rayons issus d'un même 
+   endroit/objet en un point. Ce point est appelé \underline{l'image} (réele). 
+
+   Une lentille divergente ne produit pas d'image réele, mais une
+   \underline{image virtuelle}, un point d'où \emph{semble} émaner les rayons.
+
+   La position de l'objet est notée $p$ et la position de l'image (virtuelle ou
+   réele) est notée $p'$. Attention, sur la figure \ref{fig:image} ces notations
+   ne sont pas utilisée. 
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{image.png}
+        \caption{(a) l'image réele d'une lentille convergente. (b) l'image
+        virtuelle d'une lentille divergente.}
+        \label{fig:image}
+    \end{figure}
+
+   On appelle aussi image virtuelle une image qui se \emph{serait} formée si les
+   rayons n'avait pas été interrompus.
+
+   La \underline{distance focale}, notée $f$ est la distance qui sépare le
+   centre de la lentille de l'image formée par des rayons parralèles à
+   l'axe ; émit d'un objet infiniment loin. Elle est positive dans le cas des
+   lentilles convergentes et négatives pour les lentilles divergentes.
+
+   Le \underline{foyer image} ($F'$) d'une lentille, est un point sur son axe
+   optique qui correspond à $+f$. C'est l'endroit où se forme l'image de 
+   rayons parallèles. 
+
+   Le \underline{foyer objet} ($F$) est un point sur l'axe optique qui
+   correspond à $-f$. Si un rayon passe par lui, il ressortira parrallèle à
+   l'axe.
+
+   La distance focale est la principale propriété qui définit le comportement
+   de la lentille. Celle-ci peut être trouvée expérimentalement avec des rayons
+   parrallèles ou avec les équations suivantes :
+
+   \begin{align} 
+      &\frac{1}{f} = (n - 1)(\frac{1}{R_1} - \frac{1}{R_2}) \label{eq:reglefoc} \\
+      &\frac{1}{f} = \frac{1}{p'} - \frac{1}{p} \label{eq:reglelent}
+   \end{align}
+
+   Dans l'équation \ref{eq:reglefoc}, $n$ représente l'indice de réfraction du
+   matériel de la lentille.  Celui-ci, étant toujours $ >1$, $(n - 1)$ est
+   positif. $(\frac{1}{R_1} - \frac{1}{R_2})$ est positif dans le cas des
+   lentilles convergentes et négatif dans le cas contraitre.
+
+   L'équation \ref{eq:reglelent} est plus intéressante car elle nous permet de
+   déterminer l'objet et l'image en fonction de la distance focale. Elle aussi est
+   positive dans le cas des lentilles convergentes ($p$ étant toujours $< 0$,
+   $-p = +|p|$) et négative dans le cas des lentilles divergentes. Avec ces
+   dernières, $p$ et $p'$ sont négatifs, mais vu que $|p| > |p'|$,
+   $|\frac{1}{p}| < |\frac{1}{p'}|$. Ainsi, $(\frac{1}{p'} - \frac{1}{p} =
+   \frac{1}{p'} + |\frac{1}{p}|) < 0$.
+   
+   Cette équation nous donne la vergence ($C$), qui est l'inverse de la distance
+   focale :
+   \begin{equation}
+      C = \frac{1}{f}
+   \end{equation}
+   La vergence mesure la convergence. Une lentille est d'autant plus convergente 
+   que sa distance focale est petite et que sa vergence est grande.
+   
+   \subsection{Construction d'image de lentilles convergentes}
+   On peut construire l'image d'une lentille à partir de sa distance focale
+   grâce à deux propritées que toutes les lentilles ont : 
+
+   \begin{itemize}
+      \item[-] Un rayon parallèle à l'axe optique converge toujours dans la
+      direction du foyer image et inversément, un rayon ressortant parallèlement
+      est passé par le foyer objet ; un rayon parallèle est passé/passera par le
+      foyer qui est de l'autre côté de la lentille.
+      \item[-] Un rayon passant par le \underline{centre optique} n'est pas
+      dévié.  
+   \end{itemize}
+
+
+   Ainsi, si on a la focale, on peut déjà déterminer le chemin de trois 
+   rayons :
+   
+   \begin{itemize}
+      \item Celui qui part de l'objet, passe par le foyer objet et ressort
+      parallèle.
+      \item Celui qui part de l'objet parralèlement à l'axe et ressort en
+      direction du foyer image.
+      \item celui qui traverse le centre optique et n'est pas devié.
+   \end{itemize}
+
+   Ainsi, on peut toujours trouver le chemin que prend un rayon passant par le
+   centre optique, et on peut trouver le chemin du rayon parallèle si on
+   connait la focale.
+
+   Sachant que l'image d'un objet est l'endroit vers lequel tous les rayons 
+   qu'il émet convergent, se croisent, en construisant le chemin de ses deux
+   types de rayons, on peut trouver l'image à leur croisement. De ce fait, on
+   n'a besoin, que du croisement de deux rayons. 
+   
+   Une fois qu'on a l'image, on peut construire n'importe qu'elle rayon en le
+   faisant passer par celle-ci.
+
+
+   exemple :
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{constrimagec.png}
+        \caption{construction de l'image d'une lentille convergente}
+        \label{fig:constrimagec}
+    \end{figure}
+
+   La distance qu'il y a entre $A$ et $B$ correspond à la taille de l'objet, la
+   distance entre $A'$ et $B'$ correspond à la taille de l'image.
+
+   Avec ces notations, l'agrandissement linéaire est de 
+   \begin{equation}
+      Grandissement = \gamma  = \frac{A'B'}{AB} = \frac{Taille \ Image}{Taille \ Objet}
+   \end{equation}
+   Pour les images renversée, $\gamma$ est négatif.
+
+   Si l'objet est placé au delà de $-2f$, l'image est plus petite 
+   et renversée. 
+
+   Si l'objet est placé à $-2f$, l'image est aussi grande et renversée.
+
+   Si l'objet est placé entre $-2f$ et $-f$, l'image est plus grande et
+   renversée.
+
+   Si l'objet est placé sur $-f$, il n'y a pas d'image. Elle se forme à l'infini
+   des deux côtés (virtuelle et réel) et a une taille infinie.
+
+   Si l'objet est placé avant $-f$, elle est virtuelle, plus grande et droite.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.49\textwidth]{imagesurfocale.jpeg}
+        \includegraphics[width=0.49\textwidth]{imagemoinsfocale.png}
+        \caption{Illustrations des deux derniers cas}
+        \label{fig:objsurfoc}
+    \end{figure}
+
+   \subsection{Construction d'image virtuelle de lentilles divergentes}
+
+   Pour construire l'image virtuelle d'une lentille divergente, suivre la figure
+   \ref{fig:constrimaged}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{constructionimagevirtuelle.jpg}
+        \caption{Construction de l'image virtuelle d'une lentille divergente}
+        \label{fig:constrimaged}
+    \end{figure}
+
+   On pourrait rajouter le troisième rayon, qui part en direction de $F'$ (le
+   foyer de l'autre côté de la lentille qu'on ne voit pas sur l'illustration) et
+   qui est redirigé de sorte d'être parallèle à l'axe optique.
+
+   N'importe où l'objet est placé, avec les lentilles divergentes, l'image sera
+   toujours droite, plus petite et virtuelle. Toutefois, au plus on se rapproche
+   de la lentille, au plus l'image sera grande. A $-f$ l'agrandissement est de
+   $0.5$, à un hypotéthique $0f$ l'agrandissement serait de $1$.
+
+   \subsection{Composition de lentilles}
+   Quand deux lentilles sont très proches on peut fusionner leurs convergences 
+   avec la règle :
+
+   \begin{equation}
+      \frac{1}{f} = \frac{1}{f_1} + \frac{1}{f_2}
+   \end{equation}
+\end{document}
