@@ -1,0 +1,90 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{a4}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{chemfig}
+\renewcommand{\arraystretch}{1.5}
+\usepackage[version=4]{mhchem} % Package for chemical equation typesetting
+\usepackage{amssymb}
+\usepackage{siunitx}
+
+\author{Igor et Antoine}
+\date{\today}
+\title{Compte rendu : Traveaux pratiques thermochimie} 
+\parskip=5pt
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Vérification de la loi de Hess}
+\subsection{Mesures}
+Les mesures suivantes sont prises du groupe Camille/Dune car notre équipe n'en
+a pas.
+\subsubsection{Première réaction}
+Rappel de la réaction : 
+\begin{center}
+    \ce{NaOH_{(sol)} ->[\ce{+H_2O}] Na+ + OH-}
+\end{center}
+
+\begin{itemize}
+    \item[Masse \ce{H_2O} : ] 0.1003 kg
+    \item[Masse NaOH : ] 0.00212 kg
+    \item[Température initiale \ce{H_2O} ($Ti$) :] 23°C  
+    \item[Température finale ($Tf$) :] 27°C  
+    \item[Différence de température ($\Delta T$) :] 4°C  
+\end{itemize}
+
+\subsubsection{Deuxième réaction}
+Rappel de la réaction : 
+\begin{center}
+    \ce{NaOH_{(sol)} + H+ + Cl- -> Na+ + Cl- + H_2O} 
+\end{center}
+
+\begin{itemize}
+    \item[Masse \ce{H_2O} : ] 0.10377 kg
+    \item[Masse NaOH : ] 0.00202 kg
+    \item[Température initiale \ce{HCl} ($Ti$) :] 23°C 
+    \item[Température finale ($Tf$) :] 32°C  
+    \item[Différence de température ($\Delta T$) :] 9°C  
+\end{itemize}
+
+\subsubsection{Troisième réaction}
+Rappel de la réaction : 
+\begin{center}
+    \ce{Na+ + OH- + H+ + Cl- -> Na+ + Cl- + H_2O} 
+\end{center}
+
+\begin{itemize}
+    \item[Masse HCL : ] 0.10038 kg
+    \item[Température initiale \ce{HCl} ($Ti$) :] 23°C 
+    \item[Température finale ($Tf$) :] 29°C  
+    \item[Différence de température ($\Delta T$) :] 6°C  
+\end{itemize}
+
+\subsection{Calculs}
+\subsubsection{Enthaplie première réaction}
+\begin{align*}
+    \Delta H1 \approx 4180 Jkg^{-1}K^{-1} \cdot 0.1003kg \cdot 4K \approx 1677 J
+\end{align*}
+
+\subsubsection{Enthalpie deuxième réaction}
+\begin{align*}
+    \Delta H2 \approx 4180 Jkg^{-1}K^{-1} \cdot 0.1038kg \cdot 9K \approx 3905 J
+\end{align*}
+
+\subsubsection{Enthalpie troisième réaction}
+\begin{align*}
+    \Delta H3 \approx 4180 Jkg^{-1}K^{-1} \cdot 0.1004kg \cdot 6K \approx 2518 J
+\end{align*}
+
+\subsection{Résultats}
+Selon la loi de \textit{Hess}, l'enthalpie est une fonction d'état, sa variation
+ne dépend que de la différence entre l'état initial et final.
+
+Ainsi, 
+
+\section{Déterminer la température de combustion du magnésium}
+
+\end{document}
